@@ -56,7 +56,7 @@ if (!class_exists('Admin_Collapse_Subpages')) {
 				wp_enqueue_script('jquery-cookie', plugins_url('js/jquery.cookie.js', __FILE__ ), 'jquery', '1.4.0');
 
 				//main collapse pages script
-				wp_register_script('acs-js', plugins_url('js/admin_collapse_subpages.js', __FILE__ ), false, $this->version);
+				wp_register_script('acs-js', plugins_url('js/admin_collapse_subpages.js', __FILE__ ), array('jquery-cookie'), $this->version);
 				wp_localize_script('acs-js', 'acs_strings', $this->translation_strings());
 				wp_enqueue_script('acs-js');
 
