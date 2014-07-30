@@ -5,7 +5,7 @@
 jQuery().ready(function($){
 
 
-	var links ='<li class="expand_all_link"> | <a href="javascript:void(0);">Expand All</a></li><li class="collapse_all_link"> | <a href="javascript:void(0);">Collapse All</a></li>';
+	var links ='<li class="expand_all_link"> | <a href="javascript:void(0);">' + acs_strings.expand_all + '</a></li><li class="collapse_all_link"> | <a href="javascript:void(0);">' + acs_strings.collapse_all + '</a></li>';
 	/*
 	 * Add Expand/Collapse ALL Links to DOM (has to be first for listeners)
 	 */
@@ -45,7 +45,7 @@ jQuery().ready(function($){
 			var id = jQuery(this).find('[name="post[]"]').attr('value');
 	
 			if(jQuery('#the-list').find('[data-parent="' + id + '"]').size() > 0)
-				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">[children]</a></span>');			
+				jQuery(this).find('.page-title strong').append('<span class="expand_link"><a href="javascript:void(0);" class="minus">' + acs_strings.children + '</a></span>');
 		});
 		
 		/*
