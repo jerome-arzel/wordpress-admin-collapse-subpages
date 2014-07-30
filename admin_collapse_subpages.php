@@ -3,8 +3,9 @@
 	Plugin Name: Admin Collapse Subpages
 	Plugin URI: http://alexchalupka.com/projects/wordpress/admin-collapse-subpages/
 	Description: Using this plugin one can easily collapse/expand pages / custom post types with children and grand children.
-	Author: Alex Chalupka
+	Author: Alex Chalupka and Jérôme Arzel
 	Author URI: http://alexchalupka.com/
+	Text Domain: admin-collapse-subpages
 	Version: 2.2
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
