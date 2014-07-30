@@ -18,6 +18,8 @@
 if (!class_exists('Admin_Collapse_Subpages')) {
 
 	class Admin_Collapse_Subpages {
+		public $version = '2.2';
+
 		function __construct() {
 			add_action('admin_enqueue_scripts', array($this, 'acs_scripts'));
 		}
@@ -46,10 +48,10 @@ if (!class_exists('Admin_Collapse_Subpages')) {
 				wp_enqueue_script('jquery-cookie', plugins_url('js/jquery.cookie.js', __FILE__ ), 'jquery', '1.4.0');
 
 				//main collapse pages script
-				wp_enqueue_script('acs-js',plugins_url('js/admin_collapse_subpages.js', __FILE__ ), false, '2.0');
+				wp_enqueue_script('acs-js',plugins_url('js/admin_collapse_subpages.js', __FILE__ ), false, $this->version);
 
 				//Load Styles
-				wp_enqueue_style('acs-css', plugins_url('css/style.css', __FILE__ ), false, '2.0', 'screen');
+				wp_enqueue_style('acs-css', plugins_url('css/style.css', __FILE__ ), false, $this->version, 'screen');
 			}
 		}
 	}
