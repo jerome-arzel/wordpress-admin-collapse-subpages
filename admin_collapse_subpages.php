@@ -6,7 +6,7 @@
 	Author: Alex Chalupka and Jérôme Arzel
 	Author URI: http://alexchalupka.com/
 	Text Domain: admin-collapse-subpages
-	Version: 2.2
+	Version: 2.3
 	License: GPLv2 or later
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -19,7 +19,7 @@
 if (!class_exists('Admin_Collapse_Subpages')) {
 
 	class Admin_Collapse_Subpages {
-		public $version = '2.2';
+		public $version = '2.3';
 
 		function __construct() {
 			add_action('admin_init', array($this, 'action_init'));
