@@ -21,6 +21,7 @@ if (!class_exists('Admin_Collapse_Subpages')) {
 		public $version = '2.2';
 
 		function __construct() {
+			add_action('admin_init', array($this, 'action_init'));
 			add_action('admin_enqueue_scripts', array($this, 'acs_scripts'));
 		}
 
@@ -35,6 +36,10 @@ if (!class_exists('Admin_Collapse_Subpages')) {
 				'collapse_all' => __('Collapse All', 'admin-collapse-subpages'),
 				'children' => __('[children]', 'admin-collapse-subpages'),
 			);
+		}
+
+		public function action_init() {
+			load_plugin_textdomain('admin-collapse-subpages', false, basename( dirname( __FILE__ ) ) . '/languages' );
 		}
 
 		public function acs_scripts() {
