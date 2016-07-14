@@ -2,13 +2,14 @@
 
 .expand_link {
 	display: inline-block;
-	vertical-align: middle;
-	margin-left: 8px;
+	vertical-align: top;
+	margin: -2px 0 0 10px;
 }
 
-.expand_link a {
+.wp-core-ui .expand_link a.button {
 	height: 24px;
 	line-height: 24px;
+	padding: 0 6px;
 }
 
 .expand_link a::before {
