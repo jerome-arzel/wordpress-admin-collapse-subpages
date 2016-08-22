@@ -1,5 +1,5 @@
 === Admin Collapse Subpages ===
-Contributors: lupka , bravokeyl
+Contributors: lupka , bravokeyl, jeromear, JiveDig
 Donate link: http://alexchalupka.com/donate
 Tags: page, post, links,pages, admin , link ,plugin, random, posts, widget, categories, date, date range, timeframe, excerpt, randomize, sidebar, category
 Requires at least: 3.0
@@ -65,3 +65,7 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 * Added support custom post types which are hieararchial
 = 2.1 =
 * Added support custom post types which are hieararchial
+= 2.2 =
+= 2.3 =
+= 2.4 =
+* Use dashicons and WP core button styles

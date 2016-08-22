@@ -1,15 +1,24 @@
 /* simple styles for  +/- links */
 
-.expand_link a{
-	display:inline-block;
-	width: 16px;
-	height: 16px;
-	margin:0 0 0 10px;
-	text-indent: -9999px;
-	background: url(../images/plus.png) no-repeat top left transparent;
-	padding:2px;
+.expand_link {
+	display: inline-block;
+	vertical-align: top;
+	margin: -2px 0 0 10px;
 }
 
-.expand_link a.minus{
-	background: url(../images/minus.png) no-repeat top left transparent;
+.wp-core-ui .expand_link a.button {
+	height: 24px;
+	line-height: 24px;
+	padding: 0 6px;
+	box-shadow: none;
+}
+
+.expand_link a::before {
+	content: "\f347";
+	display: inline-block;
+	font-family: dashicons;
+}
+
+.expand_link a.minus::before {
+	content: "\f343";
 }
