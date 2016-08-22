@@ -66,4 +66,5 @@ I'd recommend not using Quick Edit to change parent/child pages at all. It often
 = 2.1 =
 * Added support custom post types which are hieararchial
 = 2.2 =
+= 2.3 =
 * Use dashicons and WP core button styles
